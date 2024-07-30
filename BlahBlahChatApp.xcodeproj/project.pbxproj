@@ -11,6 +11,8 @@
 		7E6557942C595653003BF801 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6557932C595653003BF801 /* ContentView.swift */; };
 		7E6557962C595655003BF801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6557952C595655003BF801 /* Assets.xcassets */; };
 		7E6557992C595655003BF801 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6557982C595655003BF801 /* Preview Assets.xcassets */; };
+		7E6557AB2C595A9C003BF801 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6557AA2C595A9C003BF801 /* LoginView.swift */; };
+		7E6557AE2C595AB4003BF801 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6557AD2C595AB4003BF801 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		7E6557932C595653003BF801 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7E6557952C595655003BF801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E6557982C595655003BF801 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7E6557AA2C595A9C003BF801 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7E6557AD2C595AB4003BF801 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		7E6557A02C59582A003BF801 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7E6557A62C595A67003BF801 /* Authentication */,
 				7E6557A42C59587A003BF801 /* Root */,
 			);
 			path = Core;
@@ -119,6 +124,47 @@
 			isa = PBXGroup;
 			children = (
 				7E6557932C595653003BF801 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E6557A62C595A67003BF801 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7E6557A82C595A7F003BF801 /* SignUp */,
+				7E6557A72C595A71003BF801 /* Login */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		7E6557A72C595A71003BF801 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7E6557A92C595A87003BF801 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7E6557A82C595A7F003BF801 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7E6557AC2C595AA8003BF801 /* View */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		7E6557A92C595A87003BF801 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E6557AA2C595A9C003BF801 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E6557AC2C595AA8003BF801 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E6557AD2C595AB4003BF801 /* SignUpView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6557AE2C595AB4003BF801 /* SignUpView.swift in Sources */,
+				7E6557AB2C595A9C003BF801 /* LoginView.swift in Sources */,
 				7E6557942C595653003BF801 /* ContentView.swift in Sources */,
 				7E6557922C595653003BF801 /* BlahBlahChatAppApp.swift in Sources */,
 			);
@@ -253,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -310,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -331,16 +379,17 @@
 				DEVELOPMENT_TEAM = 3686A6RW24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Blah Blah";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.com.BlahBlahChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -360,16 +409,17 @@
 				DEVELOPMENT_TEAM = 3686A6RW24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Blah Blah";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.com.BlahBlahChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

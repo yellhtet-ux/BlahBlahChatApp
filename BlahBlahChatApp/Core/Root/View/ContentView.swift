@@ -9,17 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-          LoginView()
+     SignupView()
     }
-//    init    () {
-//        for familyName in UIFont.familyNames {
-//            print("FAMILY NAME: \(familyName)")
-//            
-//            for fontName in UIFont.fontNames(forFamilyName: familyName) {
-//                print("FONT NAME: \(fontName)")
-//            }
-//        }
-//    }
 }
 
 #Preview {

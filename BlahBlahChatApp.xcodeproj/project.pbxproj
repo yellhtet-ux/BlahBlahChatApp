@@ -12,6 +12,12 @@
 		7E4B5C682C5B92FD00E8D561 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4B5C672C5B92FD00E8D561 /* RegistrationViewModel.swift */; };
 		7E4B5C6A2C5B99D400E8D561 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4B5C692C5B99D400E8D561 /* AddEmailView.swift */; };
 		7E4B5C6C2C5B9A1200E8D561 /* AddEmailConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4B5C6B2C5B9A1200E8D561 /* AddEmailConst.swift */; };
+		7E5CE6D92C5BCFE7004C50D9 /* AddPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CE6D82C5BCFE7004C50D9 /* AddPasswordView.swift */; };
+		7E5CE6DB2C5BD182004C50D9 /* AddPasswordConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CE6DA2C5BD182004C50D9 /* AddPasswordConst.swift */; };
+		7E5CE6DD2C5BD5D7004C50D9 /* AddUserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CE6DC2C5BD5D7004C50D9 /* AddUserNameView.swift */; };
+		7E5CE6DF2C5BD6D7004C50D9 /* AddUserNameConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CE6DE2C5BD6D6004C50D9 /* AddUserNameConst.swift */; };
+		7E5CE6E12C5BD7B3004C50D9 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CE6E02C5BD7B3004C50D9 /* CompleteSignUpView.swift */; };
+		7E5CE6E32C5BD7DD004C50D9 /* CompleteSignUpConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CE6E22C5BD7DD004C50D9 /* CompleteSignUpConst.swift */; };
 		7E6557922C595653003BF801 /* BlahBlahChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6557912C595653003BF801 /* BlahBlahChatAppApp.swift */; };
 		7E6557942C595653003BF801 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6557932C595653003BF801 /* ContentView.swift */; };
 		7E6557962C595655003BF801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6557952C595655003BF801 /* Assets.xcassets */; };
@@ -35,6 +41,12 @@
 		7E4B5C672C5B92FD00E8D561 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		7E4B5C692C5B99D400E8D561 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		7E4B5C6B2C5B9A1200E8D561 /* AddEmailConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailConst.swift; sourceTree = "<group>"; };
+		7E5CE6D82C5BCFE7004C50D9 /* AddPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordView.swift; sourceTree = "<group>"; };
+		7E5CE6DA2C5BD182004C50D9 /* AddPasswordConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordConst.swift; sourceTree = "<group>"; };
+		7E5CE6DC2C5BD5D7004C50D9 /* AddUserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserNameView.swift; sourceTree = "<group>"; };
+		7E5CE6DE2C5BD6D6004C50D9 /* AddUserNameConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserNameConst.swift; sourceTree = "<group>"; };
+		7E5CE6E02C5BD7B3004C50D9 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
+		7E5CE6E22C5BD7DD004C50D9 /* CompleteSignUpConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpConst.swift; sourceTree = "<group>"; };
 		7E65578E2C595653003BF801 /* BlahBlahChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlahBlahChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6557912C595653003BF801 /* BlahBlahChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlahBlahChatAppApp.swift; sourceTree = "<group>"; };
 		7E6557932C595653003BF801 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -253,6 +265,9 @@
 			children = (
 				7E6557AD2C595AB4003BF801 /* SignupView.swift */,
 				7E4B5C692C5B99D400E8D561 /* AddEmailView.swift */,
+				7E5CE6DC2C5BD5D7004C50D9 /* AddUserNameView.swift */,
+				7E5CE6D82C5BCFE7004C50D9 /* AddPasswordView.swift */,
+				7E5CE6E02C5BD7B3004C50D9 /* CompleteSignUpView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +328,9 @@
 			children = (
 				7EA7CA492C5B7B6100887395 /* SignupConstant.swift */,
 				7E4B5C6B2C5B9A1200E8D561 /* AddEmailConst.swift */,
+				7E5CE6DA2C5BD182004C50D9 /* AddPasswordConst.swift */,
+				7E5CE6DE2C5BD6D6004C50D9 /* AddUserNameConst.swift */,
+				7E5CE6E22C5BD7DD004C50D9 /* CompleteSignUpConst.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -390,20 +408,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E4B5C6A2C5B99D400E8D561 /* AddEmailView.swift in Sources */,
+				7E5CE6D92C5BCFE7004C50D9 /* AddPasswordView.swift in Sources */,
 				7EA7CA402C5B3F8F00887395 /* FontExtension.swift in Sources */,
 				7E6557AE2C595AB4003BF801 /* SignupView.swift in Sources */,
+				7E5CE6E32C5BD7DD004C50D9 /* CompleteSignUpConst.swift in Sources */,
 				7E4729682C5AA19100C30201 /* LoginConstant.swift in Sources */,
 				7E6557AB2C595A9C003BF801 /* LoginView.swift in Sources */,
 				7EA7CA462C5B50F200887395 /* LoginEnum.swift in Sources */,
+				7E5CE6E12C5BD7B3004C50D9 /* CompleteSignUpView.swift in Sources */,
 				7E4B5C6C2C5B9A1200E8D561 /* AddEmailConst.swift in Sources */,
 				7EA7CA352C5B376E00887395 /* MailAndPasswordTextField.swift in Sources */,
 				7EA7CA4A2C5B7B6100887395 /* SignupConstant.swift in Sources */,
+				7E5CE6DB2C5BD182004C50D9 /* AddPasswordConst.swift in Sources */,
 				7E6557942C595653003BF801 /* ContentView.swift in Sources */,
 				7E6557922C595653003BF801 /* BlahBlahChatAppApp.swift in Sources */,
+				7E5CE6DF2C5BD6D7004C50D9 /* AddUserNameConst.swift in Sources */,
 				7EA7CA322C5B32E600887395 /* ColorExtension.swift in Sources */,
 				7E4B5C682C5B92FD00E8D561 /* RegistrationViewModel.swift in Sources */,
 				7E47296B2C5AA5BC00C30201 /* ThirdPartyLoginView.swift in Sources */,
 				7EA7CA432C5B503600887395 /* ImageExtension.swift in Sources */,
+				7E5CE6DD2C5BD5D7004C50D9 /* AddUserNameView.swift in Sources */,
 				7EA7CA382C5B399A00887395 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,42 +1,43 @@
 //
-//  AddEmailView.swift
+//  AddUserNameView.swift
 //  BlahBlahChatApp
 //
 //  Created by Andrew Hardin on 8/1/24.
 //
 
-import SwiftUI
+import SwiftUI 
 
-struct AddEmailView: View {
-    @Environment(\.dismiss)var dismiss
+
+struct AddUserNameView : View {
+    @Environment(\.dismiss) var dismiss
     @EnvironmentObject private var registerVM : RegistrationViewModel
-    @State private var email = ""
+    @State private var userName = ""
     var body: some View {
-        VStack(spacing: 12) {
+        VStack (spacing: 12) {
 // MARK: - Title
-            Text(AddEmailConst.addEmail)
+            Text(AddUserNameConst.addUserNameTitle)
                 .font(.boldTitle)
                 .padding(.top)
-// MARK: - Caption            
-            Text(AddEmailConst.addEmailCaption)
+// MARK: - Caption 
+            Text(AddUserNameConst.addUserNameCaption)
                 .font(.mediumCaption)
                 .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal,24)
-// MARK: - Email TextField
+// MARK: - Username Textfield
             VStack (alignment: .leading) {
-                Text(AddEmailConst.email)
+                Text(AddUserNameConst.userName)
                     .font(.mediumCaption)
                     .foregroundColor(.init(hex: "24786D"))
                 
-                TextField("",text: $email)
+                TextField("",text: $userName)
                     .modifier(MailAndPasswordTextField())
             }
             .padding(.horizontal,15)
             .padding(.top)
             
             NavigationLink { 
-               AddUserNameView()
+               AddPasswordView()
                     .navigationBarBackButtonHidden()
             } label: { 
                 Text("Next")
@@ -51,7 +52,7 @@ struct AddEmailView: View {
             Spacer()
         }
         .toolbar {
-            ToolbarItem (placement: .topBarLeading){
+            ToolbarItem(placement: .topBarLeading) {
                 Image(systemName: "chevron.left")
                     .imageScale(.large)
                     .onTapGesture {
@@ -63,5 +64,5 @@ struct AddEmailView: View {
 }
 
 #Preview {
-    AddEmailView()
+    AddUserNameView()
 }

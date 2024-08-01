@@ -1,5 +1,5 @@
 //
-//  AddEmailView.swift
+//  AddPasswordView.swift
 //  BlahBlahChatApp
 //
 //  Created by Andrew Hardin on 8/1/24.
@@ -7,36 +7,36 @@
 
 import SwiftUI
 
-struct AddEmailView: View {
-    @Environment(\.dismiss)var dismiss
+struct AddPasswordView: View {
+    @Environment(\.dismiss) var dismiss
     @EnvironmentObject private var registerVM : RegistrationViewModel
-    @State private var email = ""
+    @State private var password = ""
     var body: some View {
         VStack(spacing: 12) {
 // MARK: - Title
-            Text(AddEmailConst.addEmail)
+            Text(AddPasswordConst.addPassword)
                 .font(.boldTitle)
                 .padding(.top)
-// MARK: - Caption            
-            Text(AddEmailConst.addEmailCaption)
+// MARK: - Caption 
+            Text(AddPasswordConst.addPasswordCaption)
                 .font(.mediumCaption)
                 .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal,24)
-// MARK: - Email TextField
+// MARK: - Password Textfield
             VStack (alignment: .leading) {
-                Text(AddEmailConst.email)
+                Text(AddPasswordConst.password)
                     .font(.mediumCaption)
                     .foregroundColor(.init(hex: "24786D"))
                 
-                TextField("",text: $email)
+                SecureField("",text: $password)
                     .modifier(MailAndPasswordTextField())
             }
             .padding(.horizontal,15)
             .padding(.top)
             
             NavigationLink { 
-               AddUserNameView()
+                CompleteSignUpView()
                     .navigationBarBackButtonHidden()
             } label: { 
                 Text("Next")
@@ -51,7 +51,7 @@ struct AddEmailView: View {
             Spacer()
         }
         .toolbar {
-            ToolbarItem (placement: .topBarLeading){
+            ToolbarItem(placement: .topBarLeading) {
                 Image(systemName: "chevron.left")
                     .imageScale(.large)
                     .onTapGesture {
@@ -63,5 +63,5 @@ struct AddEmailView: View {
 }
 
 #Preview {
-    AddEmailView()
+    AddPasswordView()
 }

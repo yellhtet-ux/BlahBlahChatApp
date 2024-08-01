@@ -9,14 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+          LoginView()
     }
+//    init    () {
+//        for familyName in UIFont.familyNames {
+//            print("FAMILY NAME: \(familyName)")
+//            
+//            for fontName in UIFont.fontNames(forFamilyName: familyName) {
+//                print("FONT NAME: \(fontName)")
+//            }
+//        }
+//    }
 }
 
 #Preview {

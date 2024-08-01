@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E4729682C5AA19100C30201 /* LoginConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4729672C5AA19100C30201 /* LoginConstant.swift */; };
+		7E47296B2C5AA5BC00C30201 /* ThirdPartyLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E47296A2C5AA5BC00C30201 /* ThirdPartyLoginView.swift */; };
 		7E6557922C595653003BF801 /* BlahBlahChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6557912C595653003BF801 /* BlahBlahChatAppApp.swift */; };
 		7E6557942C595653003BF801 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6557932C595653003BF801 /* ContentView.swift */; };
 		7E6557962C595655003BF801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6557952C595655003BF801 /* Assets.xcassets */; };
 		7E6557992C595655003BF801 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6557982C595655003BF801 /* Preview Assets.xcassets */; };
 		7E6557AB2C595A9C003BF801 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6557AA2C595A9C003BF801 /* LoginView.swift */; };
 		7E6557AE2C595AB4003BF801 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6557AD2C595AB4003BF801 /* SignUpView.swift */; };
+		7EA7CA322C5B32E600887395 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7CA312C5B32E600887395 /* ColorExtension.swift */; };
+		7EA7CA352C5B376E00887395 /* MailAndPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7CA342C5B376E00887395 /* MailAndPasswordTextField.swift */; };
+		7EA7CA382C5B399A00887395 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7CA372C5B399A00887395 /* LoginViewModel.swift */; };
+		7EA7CA3B2C5B3D0B00887395 /* Caros-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7EA7CA3A2C5B3D0B00887395 /* Caros-Bold.otf */; };
+		7EA7CA3D2C5B3D2300887395 /* Caros-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7EA7CA3C2C5B3D2300887395 /* Caros-Medium.otf */; };
+		7EA7CA402C5B3F8F00887395 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7CA3F2C5B3F8F00887395 /* FontExtension.swift */; };
+		7EA7CA432C5B503600887395 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7CA422C5B503600887395 /* ImageExtension.swift */; };
+		7EA7CA462C5B50F200887395 /* LoginEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7CA452C5B50F200887395 /* LoginEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E4729672C5AA19100C30201 /* LoginConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConstant.swift; sourceTree = "<group>"; };
+		7E47296A2C5AA5BC00C30201 /* ThirdPartyLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartyLoginView.swift; sourceTree = "<group>"; };
 		7E65578E2C595653003BF801 /* BlahBlahChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlahBlahChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6557912C595653003BF801 /* BlahBlahChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlahBlahChatAppApp.swift; sourceTree = "<group>"; };
 		7E6557932C595653003BF801 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +35,15 @@
 		7E6557982C595655003BF801 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E6557AA2C595A9C003BF801 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7E6557AD2C595AB4003BF801 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		7EA7CA312C5B32E600887395 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		7EA7CA342C5B376E00887395 /* MailAndPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailAndPasswordTextField.swift; sourceTree = "<group>"; };
+		7EA7CA372C5B399A00887395 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7EA7CA3A2C5B3D0B00887395 /* Caros-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Caros-Bold.otf"; sourceTree = "<group>"; };
+		7EA7CA3C2C5B3D2300887395 /* Caros-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Caros-Medium.otf"; sourceTree = "<group>"; };
+		7EA7CA3E2C5B3D7300887395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7EA7CA3F2C5B3F8F00887395 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		7EA7CA422C5B503600887395 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		7EA7CA452C5B50F200887395 /* LoginEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +57,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E4729652C5AA17400C30201 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				7E4729662C5AA18400C30201 /* Login */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		7E4729662C5AA18400C30201 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7E4729672C5AA19100C30201 /* LoginConstant.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7E4729692C5AA57D00C30201 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7EA7CA332C5B374D00887395 /* Login */,
+				7EA7CA342C5B376E00887395 /* MailAndPasswordTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		7E6557852C595652003BF801 = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +101,11 @@
 		7E6557902C595653003BF801 /* BlahBlahChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				7EA7CA3E2C5B3D7300887395 /* Info.plist */,
+				7EA7CA442C5B50DB00887395 /* Enum */,
+				7EA7CA392C5B3CEC00887395 /* Fonts */,
 				7E65579F2C59581F003BF801 /* App */,
+				7E4729652C5AA17400C30201 /* Constant */,
 				7E6557A02C59582A003BF801 /* Core */,
 				7E6557A22C59586A003BF801 /* Extension */,
 				7E6557A12C595865003BF801 /* Model */,
@@ -85,6 +135,7 @@
 		7E6557A02C59582A003BF801 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7E4729692C5AA57D00C30201 /* Components */,
 				7E6557A62C595A67003BF801 /* Authentication */,
 				7E6557A42C59587A003BF801 /* Root */,
 			);
@@ -101,6 +152,7 @@
 		7E6557A22C59586A003BF801 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				7EA7CA412C5B500D00887395 /* UtilitiesExtension */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -140,6 +192,7 @@
 		7E6557A72C595A71003BF801 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				7EA7CA362C5B398D00887395 /* Model */,
 				7E6557A92C595A87003BF801 /* View */,
 			);
 			path = Login;
@@ -167,6 +220,57 @@
 				7E6557AD2C595AB4003BF801 /* SignUpView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7EA7CA332C5B374D00887395 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7E47296A2C5AA5BC00C30201 /* ThirdPartyLoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7EA7CA362C5B398D00887395 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7EA7CA372C5B399A00887395 /* LoginViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7EA7CA392C5B3CEC00887395 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7EA7CA3C2C5B3D2300887395 /* Caros-Medium.otf */,
+				7EA7CA3A2C5B3D0B00887395 /* Caros-Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7EA7CA412C5B500D00887395 /* UtilitiesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7EA7CA312C5B32E600887395 /* ColorExtension.swift */,
+				7EA7CA3F2C5B3F8F00887395 /* FontExtension.swift */,
+				7EA7CA422C5B503600887395 /* ImageExtension.swift */,
+			);
+			path = UtilitiesExtension;
+			sourceTree = "<group>";
+		};
+		7EA7CA442C5B50DB00887395 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				7EA7CA472C5B50F600887395 /* Login */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		7EA7CA472C5B50F600887395 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7EA7CA452C5B50F200887395 /* LoginEnum.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +331,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA7CA3B2C5B3D0B00887395 /* Caros-Bold.otf in Resources */,
+				7EA7CA3D2C5B3D2300887395 /* Caros-Medium.otf in Resources */,
 				7E6557992C595655003BF801 /* Preview Assets.xcassets in Resources */,
 				7E6557962C595655003BF801 /* Assets.xcassets in Resources */,
 			);
@@ -239,10 +345,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA7CA402C5B3F8F00887395 /* FontExtension.swift in Sources */,
 				7E6557AE2C595AB4003BF801 /* SignUpView.swift in Sources */,
+				7E4729682C5AA19100C30201 /* LoginConstant.swift in Sources */,
 				7E6557AB2C595A9C003BF801 /* LoginView.swift in Sources */,
+				7EA7CA462C5B50F200887395 /* LoginEnum.swift in Sources */,
+				7EA7CA352C5B376E00887395 /* MailAndPasswordTextField.swift in Sources */,
 				7E6557942C595653003BF801 /* ContentView.swift in Sources */,
 				7E6557922C595653003BF801 /* BlahBlahChatAppApp.swift in Sources */,
+				7EA7CA322C5B32E600887395 /* ColorExtension.swift in Sources */,
+				7E47296B2C5AA5BC00C30201 /* ThirdPartyLoginView.swift in Sources */,
+				7EA7CA432C5B503600887395 /* ImageExtension.swift in Sources */,
+				7EA7CA382C5B399A00887395 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,13 +487,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BlahBlahChatApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 3686A6RW24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Blah Blah";
+				INFOPLIST_FILE = BlahBlahChatApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlahBlahChat;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -392,6 +509,11 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.com.BlahBlahChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,13 +525,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BlahBlahChatApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 3686A6RW24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Blah Blah";
+				INFOPLIST_FILE = BlahBlahChatApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlahBlahChat;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -422,6 +547,11 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.com.BlahBlahChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

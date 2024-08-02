@@ -28,11 +28,11 @@ struct CompleteSignUpView: View {
             } label: { 
                 Text(CompleteSignUpConst.completeSignUp)
                     .font(.mediumCaption)
-                    .foregroundColor(.init(hex: "24786D"))
+                    .foregroundColor(.white)
                 
             }
-            .frame(width: (UIScreen.main.bounds.width - 60), height: 60)
-            .background(Color.init(hex: "F3F6F6"))
+            .frame(width: (UIScreen.main.bounds.width - 60), height: 50)
+            .background(Color.mainThemeColor)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             .padding(.vertical)
             .padding(.top,50)

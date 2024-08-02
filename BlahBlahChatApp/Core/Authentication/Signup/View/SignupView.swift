@@ -66,10 +66,10 @@ struct SignupView: View {
                 }label: {
                     Text(SignupConstant.signUpWithEmail)
                         .font(.mediumCaption)
-                        .foregroundColor(.init(hex: "24786D"))
+                        .foregroundColor(.mainThemeColor)
                 }
                 .frame(width: (UIScreen.main.bounds.width - 60), height: 60)
-                .background(Color.init(hex: "F3F6F6"))
+                .background(Color.authNextBtnBGColor)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 
                 // MARK: - Already have account?
@@ -86,7 +86,7 @@ struct SignupView: View {
                         }, label: {
                             Text(SignupConstant.login) 
                                 .font(.boldTitle)
-                                .foregroundColor(.init(hex: "24786D"))
+                                .foregroundColor(.mainThemeColor)
                         })
                     }
                 }

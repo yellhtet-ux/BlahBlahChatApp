@@ -12,6 +12,6 @@ struct MailAndPasswordTextField: ViewModifier {
         content
             Rectangle()
             .frame(height: 0.5)
-            .foregroundColor(.init(hex: "24786D", alpha: 1))
+            .foregroundColor(.mainThemeColor)
     }
 }

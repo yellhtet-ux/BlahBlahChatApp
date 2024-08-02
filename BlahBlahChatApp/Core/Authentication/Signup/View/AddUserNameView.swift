@@ -28,7 +28,7 @@ struct AddUserNameView : View {
             VStack (alignment: .leading) {
                 Text(AddUserNameConst.userName)
                     .font(.mediumCaption)
-                    .foregroundColor(.init(hex: "24786D"))
+                    .foregroundColor(.mainThemeColor)
                 
                 TextField("",text: $userName)
                     .modifier(MailAndPasswordTextField())
@@ -42,10 +42,10 @@ struct AddUserNameView : View {
             } label: { 
                 Text("Next")
                     .font(.mediumCaption)
-                    .foregroundColor(.init(hex: "24786D"))
+                    .foregroundColor(.mainThemeColor)
             }
             .frame(width: (UIScreen.main.bounds.width - 60), height: 60)
-            .background(Color.init(hex: "F3F6F6"))
+            .background(Color.authNextBtnBGColor)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             .padding(.top,50)
             

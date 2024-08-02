@@ -63,7 +63,7 @@ struct LoginView: View {
                             VStack(alignment: .leading) {
                                 Text(LoginConst.yourEmail)
                                     .font(.mediumCaption)
-                                    .foregroundColor(Color.init(hex: "24786D", alpha: 1))
+                                    .foregroundColor(.mainThemeColor)
                                 TextField("", text: $loginVM.email)
                                     .modifier(MailAndPasswordTextField())
                                 }
@@ -71,7 +71,7 @@ struct LoginView: View {
                             VStack(alignment: .leading) {
                                 Text(LoginConst.yourPassword)
                                     .font(.mediumCaption)
-                                    .foregroundColor(Color.init(hex: "24786D", alpha: 1))
+                                    .foregroundColor(.mainThemeColor)
                                 TextField("", text: $loginVM.password)
                                     .modifier(MailAndPasswordTextField())
                                 }   
@@ -85,10 +85,10 @@ struct LoginView: View {
                         }, label: {
                             Text(LoginConst.loginButton)
                                 .font(.mediumTitle)
-                                .foregroundColor(Color.init(hex: "797C7B"))
+                                .foregroundColor(.authButtonLabelColor)
                         })
                         .frame(width: (UIScreen.main.bounds.width - 60), height: 60)
-                        .background(Color.init(hex: "F3F6F6", alpha: 1))
+                        .background(Color.authNextBtnBGColor)
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                         .padding(.vertical,15)
                         
@@ -98,7 +98,7 @@ struct LoginView: View {
                         }, label: {
                             Text(LoginConst.forgotPassword)
                                 .font(.mediumCaption)
-                                .foregroundColor(.init(hex: "24786D"))
+                                .foregroundColor(.mainThemeColor)
                         })
                     }
             

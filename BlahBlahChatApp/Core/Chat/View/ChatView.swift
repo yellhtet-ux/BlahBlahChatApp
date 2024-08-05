@@ -9,37 +9,28 @@ import SwiftUI
 
 struct ChatView: View {
     @Environment (\.dismiss) var dismiss
-    let tempMessageArray = ["Hola","Hi","You look amazing","Your songs are really amazing I like it the most."]
+    var userModel : UserModel
+    var messageModel : [MessageModel]
     var body: some View {
         VStack {
-            ChatTitleRowView()
+            ChatTitleRowView(userModel: userModel)
             
             ScrollView {
-                ForEach(tempMessageArray, id: \.self) { message in
-                    MessageBubbleView(message: MessageModel(id: "123", message: message, isReceived: false, timestamp: Date()))
+                ForEach(messageModel, id: \.self) { messages in
+                    MessageBubbleView(message: MessageModel(id: messages.id, message: messages.message, isReceived: messages.isReceived, timestamp: messages.timestamp))
                 }
             }
             .padding(.top,10)
             .background(Color.chatScrollColor)
             .cornerRadius(30, corners: [.topLeft,.topRight])
-            .ignoresSafeArea()
+            
             
             ChatMessageField()
         }
         .background(Color.chatMainBGColor)
-        .toolbar {
-            ToolbarItem (placement: .topBarLeading){
-                Image(systemName: "chevron.left")
-                    .imageScale(.large)
-                    .onTapGesture {
-                        dismiss()
-                    }
-            }
-        }
-        
     }
 }
 
 #Preview {
-    ChatView()
+    ChatView(userModel: UserModel.MOCK_DATA[0], messageModel: UserModel.MOCK_DATA[0].messages)
 }

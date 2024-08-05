@@ -34,6 +34,10 @@
 		7EA380372C5D21EE0096437E /* ViewAndShapeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA380362C5D21EE0096437E /* ViewAndShapeExtension.swift */; };
 		7EA3803A2C5D28560096437E /* ChatMessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA380392C5D28560096437E /* ChatMessageField.swift */; };
 		7EA3803D2C5D3E670096437E /* ChatConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA3803C2C5D3E670096437E /* ChatConst.swift */; };
+		7EA380422C5E2D2B0096437E /* HomeTitleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA380412C5E2D2B0096437E /* HomeTitleRowView.swift */; };
+		7EA380472C5E31FF0096437E /* MyDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA380462C5E31FF0096437E /* MyDayView.swift */; };
+		7EA3804A2C5EA1190096437E /* ChatCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA380492C5EA1190096437E /* ChatCellView.swift */; };
+		7EA3804D2C5FBDC30096437E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA3804C2C5FBDC30096437E /* UserModel.swift */; };
 		7EA7CA322C5B32E600887395 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7CA312C5B32E600887395 /* ColorExtension.swift */; };
 		7EA7CA352C5B376E00887395 /* MailAndPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7CA342C5B376E00887395 /* MailAndPasswordTextField.swift */; };
 		7EA7CA382C5B399A00887395 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7CA372C5B399A00887395 /* LoginViewModel.swift */; };
@@ -74,6 +78,10 @@
 		7EA380362C5D21EE0096437E /* ViewAndShapeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAndShapeExtension.swift; sourceTree = "<group>"; };
 		7EA380392C5D28560096437E /* ChatMessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageField.swift; sourceTree = "<group>"; };
 		7EA3803C2C5D3E670096437E /* ChatConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatConst.swift; sourceTree = "<group>"; };
+		7EA380412C5E2D2B0096437E /* HomeTitleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleRowView.swift; sourceTree = "<group>"; };
+		7EA380462C5E31FF0096437E /* MyDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDayView.swift; sourceTree = "<group>"; };
+		7EA380492C5EA1190096437E /* ChatCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellView.swift; sourceTree = "<group>"; };
+		7EA3804C2C5FBDC30096437E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7EA7CA312C5B32E600887395 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		7EA7CA342C5B376E00887395 /* MailAndPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailAndPasswordTextField.swift; sourceTree = "<group>"; };
 		7EA7CA372C5B399A00887395 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -119,6 +127,7 @@
 		7E4729692C5AA57D00C30201 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				7EA380432C5E31A30096437E /* Home */,
 				7EA3802E2C5D12DF0096437E /* ChatView */,
 			);
 			path = Components;
@@ -289,6 +298,7 @@
 		7E6557A12C595865003BF801 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7EA3804B2C5FBDAE0096437E /* UserModel */,
 				7E5CE6F32C5CB81B004C50D9 /* MessageModel */,
 			);
 			path = Model;
@@ -420,6 +430,48 @@
 				7EA3803C2C5D3E670096437E /* ChatConst.swift */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		7EA380432C5E31A30096437E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7EA380482C5EA0FC0096437E /* ChatCell */,
+				7EA380452C5E31F10096437E /* MyDay */,
+				7EA380442C5E31A90096437E /* TitleRow */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7EA380442C5E31A90096437E /* TitleRow */ = {
+			isa = PBXGroup;
+			children = (
+				7EA380412C5E2D2B0096437E /* HomeTitleRowView.swift */,
+			);
+			path = TitleRow;
+			sourceTree = "<group>";
+		};
+		7EA380452C5E31F10096437E /* MyDay */ = {
+			isa = PBXGroup;
+			children = (
+				7EA380462C5E31FF0096437E /* MyDayView.swift */,
+			);
+			path = MyDay;
+			sourceTree = "<group>";
+		};
+		7EA380482C5EA0FC0096437E /* ChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				7EA380492C5EA1190096437E /* ChatCellView.swift */,
+			);
+			path = ChatCell;
+			sourceTree = "<group>";
+		};
+		7EA3804B2C5FBDAE0096437E /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				7EA3804C2C5FBDC30096437E /* UserModel.swift */,
+			);
+			path = UserModel;
 			sourceTree = "<group>";
 		};
 		7EA7CA332C5B374D00887395 /* Authentication */ = {
@@ -567,9 +619,11 @@
 				7E4729682C5AA19100C30201 /* LoginConstant.swift in Sources */,
 				7E6557AB2C595A9C003BF801 /* LoginView.swift in Sources */,
 				7EA7CA462C5B50F200887395 /* LoginEnum.swift in Sources */,
+				7EA380472C5E31FF0096437E /* MyDayView.swift in Sources */,
 				7E5CE6E12C5BD7B3004C50D9 /* CompleteSignUpView.swift in Sources */,
 				7E5CE6EA2C5C8EA4004C50D9 /* MainTabView.swift in Sources */,
 				7EA3803A2C5D28560096437E /* ChatMessageField.swift in Sources */,
+				7EA3804A2C5EA1190096437E /* ChatCellView.swift in Sources */,
 				7EA380312C5D152E0096437E /* ChatTitleRowView.swift in Sources */,
 				7E4B5C6C2C5B9A1200E8D561 /* AddEmailConst.swift in Sources */,
 				7EA7CA352C5B376E00887395 /* MailAndPasswordTextField.swift in Sources */,
@@ -584,11 +638,13 @@
 				7EA7CA322C5B32E600887395 /* ColorExtension.swift in Sources */,
 				7E5CE6F22C5CB7FD004C50D9 /* MessageBubbleView.swift in Sources */,
 				7E4B5C682C5B92FD00E8D561 /* RegistrationViewModel.swift in Sources */,
+				7EA380422C5E2D2B0096437E /* HomeTitleRowView.swift in Sources */,
 				7E47296B2C5AA5BC00C30201 /* ThirdPartyLoginView.swift in Sources */,
 				7EA7CA432C5B503600887395 /* ImageExtension.swift in Sources */,
 				7E5CE6EC2C5C8EAF004C50D9 /* HomeView.swift in Sources */,
 				7E5CE6DD2C5BD5D7004C50D9 /* AddUserNameView.swift in Sources */,
 				7E5CE6EF2C5C91F3004C50D9 /* MainTabConst.swift in Sources */,
+				7EA3804D2C5FBDC30096437E /* UserModel.swift in Sources */,
 				7EA7CA382C5B399A00887395 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

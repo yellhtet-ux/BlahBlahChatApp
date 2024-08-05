@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct MessageModel : Identifiable,Codable {
+struct MessageModel : Identifiable,Codable,Hashable {
     var id: String
     var message: String 
     var isReceived: Bool 

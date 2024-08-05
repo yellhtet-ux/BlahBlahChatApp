@@ -25,4 +25,17 @@ extension  Font {
     static var boldCaption : Font {
         return Font.custom("CarosBold", size: 15)
     }
+    
+    static var smallCaption: Font {
+        return Font.custom("CarosMedium", size: 10)
+    }
+
+    static var boldSmallTitle : Font {
+        return Font.custom("CarosBold", size: 12)
+    }
+    
+    static var placeholderMesage: Font {
+        return Font.custom("CarosMedium", size: 12)
+    }
+    
 }

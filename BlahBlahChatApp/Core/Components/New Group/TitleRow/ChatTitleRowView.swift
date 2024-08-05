@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct ChatTitleRowView: View {
-    let testURL = URL(string: "https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-    
+    @Environment (\.dismiss) var dismiss
+    var userModel : UserModel
     var body: some View {
         HStack (spacing: 15) {
-            AsyncImage(url: testURL) { image in
+            Button {
+                dismiss()
+            }label: {
+                Image(systemName: "chevron.left")
+                    .imageScale(.large)
+                    .foregroundColor(.black)
+            }
+            
+            AsyncImage(url: userModel.profileImage) { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -23,7 +31,7 @@ struct ChatTitleRowView: View {
             }
             
             VStack (alignment: .leading,spacing: 8){
-                Text("Madison Beer")
+                Text(userModel.name)
                     .font(.boldTitle) 
                 
                 Text("Active now")
@@ -48,7 +56,7 @@ struct ChatTitleRowView: View {
 }
 
 #Preview {
-    ChatTitleRowView()
+    ChatTitleRowView(userModel: UserModel.MOCK_DATA[0])
         .background (
             Color.authNextBtnBGColor
         )

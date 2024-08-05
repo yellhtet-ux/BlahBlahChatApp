@@ -44,4 +44,23 @@ extension Color  {
     static var chatScrollColor : Color {
         return Color("chatScrollColor")
     }
+    
+    static var homeBGColor : Color {
+        return Color("homeBGColor")
+    }
+    
+    static var homeSearchBorderColor : Color {
+        return Color("homeSearchBorderColor")
+    }
+    
+    static var homeSearchBGColor : Color {
+        return Color("homeSearchBGColor")
+    }
+}
+
+
+extension UIColor {
+    static var unselectedTabBarColor : UIColor {
+        return UIColor(named: "mainBGColor") ?? .white
+    }
 }

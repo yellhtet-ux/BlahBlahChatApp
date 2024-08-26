@@ -14,4 +14,6 @@ enum LoginConst {
     static let yourPassword = "Your password"
     static let loginButton =  "Log in"
     static let forgotPassword = "Forgot password?"
+    static let createAccount = "Create account"
+    static let or = "OR"
 }

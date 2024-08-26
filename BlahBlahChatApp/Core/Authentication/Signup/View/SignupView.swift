@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SignupView: View {
     @Environment(\.dismiss)var dismiss
-    @EnvironmentObject private var registerVM : RegistrationViewModel
+//    @StateObject private var viewModel = RegistrationViewModel()
     var body: some View {
         NavigationStack {
             VStack (spacing:25){
@@ -73,21 +73,18 @@ struct SignupView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 
                 // MARK: - Already have account?
-                NavigationLink { 
-                    LoginView()
-                        .navigationBarBackButtonHidden()
-                } label: { 
-                    HStack {
-                        Text(SignupConstant.alreadyHaveAcc) 
-                            .font(.mediumCaption)
-                            .foregroundColor(.black)
-                        Button(action: {
-                            
-                        }, label: {
-                            Text(SignupConstant.login) 
-                                .font(.boldTitle)
-                                .foregroundColor(.mainThemeColor)
-                        })
+                HStack {
+                    Text(SignupConstant.alreadyHaveAcc) 
+                        .font(.mediumCaption)
+                        .foregroundColor(.black)
+                    NavigationLink { 
+                        LoginView()
+                            .navigationBarBackButtonHidden()
+                    } label: { 
+                        Text(SignupConstant.login) 
+                            .font(.boldTitle)
+                            .foregroundColor(.mainThemeColor)
+                        
                     }
                 }
             }

@@ -9,27 +9,26 @@ import SwiftUI
 
 struct AddPasswordView: View {
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject private var registerVM : RegistrationViewModel
-    @State private var password = ""
+    @EnvironmentObject private var viewModel : RegistrationViewModel
     var body: some View {
         VStack(spacing: 12) {
-// MARK: - Title
+            // MARK: - Title
             Text(AddPasswordConst.addPassword)
                 .font(.boldTitle)
                 .padding(.top)
-// MARK: - Caption 
+            // MARK: - Caption 
             Text(AddPasswordConst.addPasswordCaption)
                 .font(.mediumCaption)
                 .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal,24)
-// MARK: - Password Textfield
+            // MARK: - Password Textfield
             VStack (alignment: .leading) {
                 Text(AddPasswordConst.password)
                     .font(.mediumCaption)
                     .foregroundColor(.mainThemeColor)
                 
-                SecureField("",text: $password)
+                SecureField("",text: $viewModel.password)
                     .modifier(MailAndPasswordTextField())
             }
             .padding(.horizontal,15)

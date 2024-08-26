@@ -9,34 +9,33 @@ import SwiftUI
 
 struct AddEmailView: View {
     @Environment(\.dismiss)var dismiss
-    @EnvironmentObject private var registerVM : RegistrationViewModel
-    @State private var email = ""
+    @EnvironmentObject private var viewModel : RegistrationViewModel
     var body: some View {
         VStack(spacing: 12) {
-// MARK: - Title
+            // MARK: - Title
             Text(AddEmailConst.addEmail)
                 .font(.boldTitle)
                 .padding(.top)
-// MARK: - Caption            
+            // MARK: - Caption            
             Text(AddEmailConst.addEmailCaption)
                 .font(.mediumCaption)
                 .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal,24)
-// MARK: - Email TextField
+            // MARK: - Email TextField
             VStack (alignment: .leading) {
                 Text(AddEmailConst.email)
                     .font(.mediumCaption)
                     .foregroundColor(.mainThemeColor)
                 
-                TextField("",text: $email)
+                TextField("",text: $viewModel.email)
                     .modifier(MailAndPasswordTextField())
             }
             .padding(.horizontal,15)
             .padding(.top)
             
             NavigationLink { 
-               AddUserNameView()
+                AddUserNameView()
                     .navigationBarBackButtonHidden()
             } label: { 
                 Text("Next")

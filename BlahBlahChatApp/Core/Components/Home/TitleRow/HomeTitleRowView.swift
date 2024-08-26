@@ -13,49 +13,50 @@ struct HomeTitleRowView: View {
         HStack{
             HStack(spacing: 20) {
                 // MARK: - Search Button
-                            Button {
-                                // Action goes in here
-                            }label: {
-                                Image(systemName: "magnifyingglass")
-                                    .imageScale(.large)
-                                    .foregroundColor(.white)
-                                    .padding()
-                                    .background(Color.homeSearchBGColor)
-                                    .clipShape(Circle())
-                                    .overlay {
-                                        Circle()
-                                            .stroke(.homeSearchBorder, lineWidth: 1)
-                                    }
-                                    
-                            }
+                Button {
+                    // Action goes in here
+                }label: {
+                    Image(systemName: "magnifyingglass")
+                        .imageScale(.large)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.homeSearchBGColor)
+                        .clipShape(Circle())
+                        .overlay {
+                            Circle()
+                                .stroke(.homeSearchBorder, lineWidth: 1)
+                        }
+                    
+                }
                 
-                        Spacer()
-                            
+                Spacer()
+                
                 // MARK: - Title Label
-                            Text("Home")
-                                .font(.boldTitle)
-                                .foregroundColor(.white)
+                Text("Home")
+                    .font(.boldTitle)
+                    .foregroundColor(.white)
                 
-                        Spacer()
+                Spacer()
                 // MARK: - Profile Button
-                            Button {
-                                
-                            }label: {
-                                AsyncImage(url: testURL) { image in
-                                    image
-                                        .resizable()
-                                        .scaledToFill()
-                                        .frame(width: 50, height: 50)
-                                        .clipShape(Circle())
-                                } placeholder: {
-                                    Image(systemName: "photo.fill")
-                                        .resizable()
-                                        .scaledToFill()
-                                        .frame(width: 50, height: 50)
-                                        .foregroundColor(Color.mainThemeColor)
-                                        .clipShape(Circle())
-                                }
-                            }
+                Button {
+                    #warning("Need To Delete This!!!")
+                    try? AuthService.shared.signOut() 
+                }label: {
+                    AsyncImage(url: testURL) { image in
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 50, height: 50)
+                            .clipShape(Circle())
+                    } placeholder: {
+                        Image(systemName: "photo.fill")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 50, height: 50)
+                            .foregroundColor(Color.mainThemeColor)
+                            .clipShape(Circle())
+                    }
+                }
             }
             .padding(.horizontal,10)
             .frame(width: (UIScreen.main.bounds.width), height: 80,alignment: .center)

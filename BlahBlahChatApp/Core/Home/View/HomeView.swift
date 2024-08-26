@@ -17,7 +17,8 @@ struct HomeView: View {
                 HomeTitleRowView()
                 // MARK: - My Day
                 ScrollView (.horizontal,showsIndicators: false){
-                    HStack(spacing: 20){
+                    LazyHStack(spacing: 20){
+                        OwnMyDayView(userModel: model[1])
                         ForEach(model,id: \.self) { userMyDay in
                             MyDayView(userModel: userMyDay)
                         }
@@ -27,15 +28,17 @@ struct HomeView: View {
                 .frame(height: 90)
                 // MARK: - Chat Session                
                 ScrollView(showsIndicators:false) {
-                    ForEach(model,id: \.self) { user in
-                        ChatCellView(userModel: user)
-                            .frame(height: 80)
-                            .onTapGesture {
-                                selectedChatCell = user
-                            }
-                            .fullScreenCover(item: $selectedChatCell) { user in
-                                ChatView(userModel: user, messageModel: user.messages)
-                            }
+                    LazyVStack {
+                        ForEach(model,id: \.self) { user in
+                            ChatCellView(userModel: user)
+                                .frame(height: 80)
+                                .onTapGesture {
+                                    selectedChatCell = user
+                                }
+                                .fullScreenCover(item: $selectedChatCell) { user in
+                                    ChatView(userModel: user, messageModel: user.messages)
+                                }
+                        } 
                     }
                 }
                 .padding(.top,10)

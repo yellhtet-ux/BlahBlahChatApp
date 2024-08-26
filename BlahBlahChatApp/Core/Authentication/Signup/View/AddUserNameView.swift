@@ -10,34 +10,33 @@ import SwiftUI
 
 struct AddUserNameView : View {
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject private var registerVM : RegistrationViewModel
-    @State private var userName = ""
+    @EnvironmentObject private var viewModel : RegistrationViewModel
     var body: some View {
         VStack (spacing: 12) {
-// MARK: - Title
+            // MARK: - Title
             Text(AddUserNameConst.addUserNameTitle)
                 .font(.boldTitle)
                 .padding(.top)
-// MARK: - Caption 
+            // MARK: - Caption 
             Text(AddUserNameConst.addUserNameCaption)
                 .font(.mediumCaption)
                 .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal,24)
-// MARK: - Username Textfield
+            // MARK: - Username Textfield
             VStack (alignment: .leading) {
                 Text(AddUserNameConst.userName)
                     .font(.mediumCaption)
                     .foregroundColor(.mainThemeColor)
                 
-                TextField("",text: $userName)
+                TextField("",text: $viewModel.userName)
                     .modifier(MailAndPasswordTextField())
             }
             .padding(.horizontal,15)
             .padding(.top)
             
             NavigationLink { 
-               AddPasswordView()
+                AddPasswordView()
                     .navigationBarBackButtonHidden()
             } label: { 
                 Text("Next")
